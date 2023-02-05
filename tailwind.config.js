@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         success: colors.pink,
         primary: colors.blue,
+        red: colors.red
       }
     },
   },
