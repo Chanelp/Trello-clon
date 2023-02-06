@@ -24,7 +24,7 @@ export class BoardsComponent {
   // Variables
   items = [
     {
-      label: 'Item 1',
+      label: 'Contacts',
       items: [
         {
           label: 'Sub Item 1.1'
@@ -35,7 +35,7 @@ export class BoardsComponent {
       ],
     },
     {
-      label: 'Item 2',
+      label: 'Notes',
       items: [
         {
           label: 'Sub Item 2.1'
@@ -46,7 +46,7 @@ export class BoardsComponent {
       ],
     },
     {
-      label: 'Item 3',
+      label: 'Earrings',
       items: [
         {
           label: 'Sub Item 3.1'

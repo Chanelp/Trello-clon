@@ -65,7 +65,10 @@
     <!-- ACORDEONES DINÁMICOS -->
     <cdk-accordion>
       <cdk-accordion-item #accordionItem="cdkAccordionItem" *ngFor="let item of items">
-        <button class="w-full text-left" type="button" (click)="accordionItem.toggle()">{{ item.label }}</button>
+        <button class="w-full py-1 px-2 flex justify-between items-center font-medium text-gray-700" type="button" (click)="accordionItem.toggle()">
+          {{ item.label }}
+          <fa-icon [icon]="accordionItem.expanded ? faAngleUp : faAngleDown"></fa-icon>
+        </button>
         <div [ngClass]="{ hidden: !accordionItem.expanded, block: accordionItem.expanded }">
           <ul class="ml-2 flex flex-col">
             <li *ngFor="let sub of item.items"> {{ sub.label }}</li>
@@ -87,49 +90,3 @@
   </div>
 </div>
 
-<!-- Accordion Workspace -->
-<!-- <button
-  class="w-full py-1 px-2 flex justify-between items-center"
-  type="button"
-  (click)="accordionMenu.toggle()"
->
-  My Workspace
-  <fa-icon
-    [icon]="accordionMenu.expanded ? faAngleUp : faAngleDown"
-  ></fa-icon>
-</button>
-<div
-  [ngClass]="{
-    hidden: !accordionMenu.expanded,
-    block: accordionMenu.expanded
-  }"
->
-  <ul class="ml-2 flex flex-col text-sm text-gray-700">
-    <li>
-      <a class="block py-1 px-3"
-        ><fa-icon [icon]="faTrello"></fa-icon> Boards</a
-      >
-    </li>
-    <li>
-      <a class="block py-1 px-3"
-        ><fa-icon [icon]="faHeart"></fa-icon> Highlights</a
-      >
-    </li>
-    <li>
-      <a class="block py-1 px-3"
-        ><fa-icon [icon]="faBorderAll"></fa-icon> Views</a
-      >
-    </li>
-    <li>
-      <a class="block py-1 px-3"
-        ><fa-icon [icon]="faUsers"></fa-icon> Members</a
-      >
-    </li>
-    <li>
-      <a class="block py-1 px-3"
-        ><fa-icon [icon]="faGear"></fa-icon> Settings</a
-      >
-    </li>
-  </ul>
-</div>
- -->
