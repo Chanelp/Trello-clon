@@ -22,4 +22,39 @@ export class BoardsComponent {
   faTrello = faTrello;
 
   // Variables
+  items = [
+    {
+      label: 'Item 1',
+      items: [
+        {
+          label: 'Sub Item 1.1'
+        },
+        {
+          label: 'Sub Item 1.2'
+        }
+      ],
+    },
+    {
+      label: 'Item 2',
+      items: [
+        {
+          label: 'Sub Item 2.1'
+        },
+        {
+          label: 'Sub Item 2.2'
+        }
+      ],
+    },
+    {
+      label: 'Item 3',
+      items: [
+        {
+          label: 'Sub Item 3.1'
+        },
+        {
+          label: 'Sub Item 3.2'
+        }
+      ],
+    },
+  ];
 }
