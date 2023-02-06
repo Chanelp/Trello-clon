@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faSquarePollVertical, faBolt, faHeart, faUser, faAngleUp, faClock, faAdd, faBorderAll, faUsers, faGear} from '@fortawesome/free-solid-svg-icons';
+import { faSquarePollVertical, faBolt, faHeart, faUser, faAngleUp, faAngleDown, faClock, faAdd, faBorderAll, faUsers, faGear} from '@fortawesome/free-solid-svg-icons';
 import { faTrello } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -13,6 +13,7 @@ export class BoardsComponent {
   faBolt = faBolt;
   faUser = faUser;
   faAngleUp = faAngleUp;
+  faAngleDown = faAngleDown;
   faClock = faClock;
   faAdd = faAdd;
   faBorderAll =faBorderAll;
@@ -21,5 +22,4 @@ export class BoardsComponent {
   faTrello = faTrello;
 
   // Variables
-  accordionMenu = false;
 }

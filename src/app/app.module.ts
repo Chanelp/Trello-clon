@@ -8,9 +8,11 @@ import { BtnComponent } from './components/btn/btn.component';
 import { BoardsComponent } from './pages/boards/boards.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
-// CDK
-import {OverlayModule} from '@angular/cdk/overlay';
+// CDK e Iconos
+import { OverlayModule } from '@angular/cdk/overlay';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
+
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserModule,
     OverlayModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    CdkAccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
